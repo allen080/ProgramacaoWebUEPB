@@ -11,4 +11,12 @@
   - Listagem de integrantes do projeto pelo professor.
   - Cadastro de usuários como aluno e professor.
   - Qualquer usuário pode visualizar quaisquer projetos e seu detalhamento.
+
+### [*] Exemplo cadastro de Aluno:
+
+![Alt text](ExemploCadastroAl.gif "Title")
+
+### [*] Exemplo login:
+
+![Alt text](ExemploLoginAl.gif "Title")
  
