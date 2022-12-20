@@ -1,0 +1,40 @@
+
+spring:
+    application:
+        name: consumer-service
+    rabbitmq:
+        address: amqp://guest@127.0.0.1:15672/
+        host: localhost
+        port: 5672
+        username: guest
+        password: guest
+        queue: professor-sent
+        exchange: professores
+        #queueAluno: aluno-sent
+        #exchageAluno: alunos
+
+    mail:
+        host: gmail.com
+        port: 587
+        username: softfarmapp@gmail.com
+        password: softfarm1651
+        properties:
+            mail:
+                smtp:
+                    auth: true
+                    starttls:
+                        enable: true
+
+server:
+    port: 8082
+    #port: 8084
+eureka:
+    instance:
+        hostname: localhost
+        port: 9001
+    client:
+        serviceUrl: 
+            registerWithEureka: false
+            fetchRegistry: false
+            defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka
+                        #http://localholst:9000/eureka/
